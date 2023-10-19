@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form filling</title>
+<link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+<form action="#">
+<div class="form">
+<img src="images/amazonicon.webp"height:"60px" width="130px"><br><br>
+
+<label for="text">First Name</label><br>
+<input type="text" class="name" value="" id="user" placeholder="Enter your first name" required/><br><br>
+<label for="text">Last Name</label><br>
+<input type="text" class="name" value="" id="user2" placeholder="Enter your last name" required/><br><br>
+<label for="text">Email</label><br>
+<input type="text" class="name" value="" id="user3" placeholder="Enter your e-mail id" required/><br><br>
+<label for="text">Mobile number</label>
+<input type="text" class="name" value="" id="user4" placeholder="Enter your mobile number" required/><br><br>
+<label for="gender">Gender :</label>
+<input type="radio" id="male" value="" name="gender" required/>
+<label for="text">Male</label>
+<input type="radio" id="female" value="" name="gender" required/>
+<label for="text">Female</label><br><br>
+<label for="text">Date of birth</label><br>
+<input type="date" class="dob" value="" id="user5" name="dob" required/><br><br>
+
+<h4>Interested Programs:</h4>
+<input type="checkbox" id="check1" value="" name="check1" required/>
+<label for="check1">Management</label><br>
+<input type="checkbox" id="check2" value="" name="check2"/>
+<label for="check1">Marketing</label><br>
+<input type="checkbox" id="check3" value="" name="check3"/>
+<label for="check1">Operations</label><br>	
+<input type="checkbox" id="check4" value="" name="check4"/>
+<label for="check1">Field work</label><br><br><br>
+<p>Enter your Address:</p>
+<textarea name="Enter your Address" rows="7" cols="45" required></textarea>
+<br>
+
+<input type="submit" class="submit" value="Signup" onclick="validate();"/>
+</p>
+</form>
+</div>
+
+
+<script>
+function validate(){
+if(document.getElementById("user").value==""){
+	window.alert("Please enter first name");
+}
+else if(document.getElementById("user2").value==""){
+	window.alert("Please enter last name");
+}
+else if(document.getElementById("user3").value==""){
+	window.alert("Please enter email id");
+}
+else if(document.getElementById("user4").value==""){
+	window.alert("Please enter mobile number");
+}
+}
+</script>
+</body>
+</html>
+
+
